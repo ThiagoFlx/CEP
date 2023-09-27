@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Verificador de CEP</title>
+    <script src="https://kit.fontawesome.com/1c38bdb754.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+    <h1 class="title">Insira seu endereço</h1>
+    <form id="form" class="address">
+        <div class="field">
+        <label>Cep</label>
+        <input type="text" id="cep" onchange="preencherCep()" placeholder="Preencha seu cep..."/>
+        </div>
+        <div class="field">
+        <label>Rua</label><input type="text" id="rua">
+        </div>
+        <div class="field">
+        <label>Bairro</label>
+        <input type="text" id="bairro"/>
+        </div>
+        <div class="field">
+        <label>Cidade</label>
+        <input type="text" id="cidade">
+        </div>
+        <div class="field">
+        <label>UF</label>
+        <input type="text" id="uf">
+        </div>
+        <div class="field">
+        <label>Nº</label>
+        <input type="text" id="numero">
+        </div>
+        <div class="triangle" id="triangle">
+            <i class="fa-solid fa-triangle-exclamation fa-xl"></i>
+            <p><i>insira o número</i></p>
+        </div>
+        <div class="field">
+        <label>Complemento</label>
+        <input type="text" id="complemento">
+        </div>
+    </form>
+    <button class="btn" onclick="validar()">ENVIAR</button>
+</body>
+<script src="script.js"></script>
+</html>

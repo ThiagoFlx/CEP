@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    margin-left: 32px;
+    margin-top: 34px;
+}
+
+.title {    
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 44px;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    margin-top: 18px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.field label {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 8px;
+}
+
+.field input {
+    width: 348px;
+    height: 44px;
+    background-color: #FEFEFE;
+    border: 2px solid #999;
+    border-radius: 5px;
+    color: #333333;
+    padding-left: 9px;
+    padding-top: 15px;
+    padding-bottom: 8px;
+
+}
+
+#numero {
+    box-sizing: border-box;
+    width: 202px;
+    height: 44px;
+    background: #FEFEFE;
+    border: 2px solid #FF0000;
+    border-radius: 5px;
+}
+
+.triangle {
+    flex-direction: row;
+    position: absolute;
+    color: #FF0000;
+    margin-left: 210px;
+    margin-top: 480px;
+}
+
+.triangle p {
+    flex-direction: row;
+    margin-left: 38px;
+    margin-top: -18px;
+    font-size: 14px;
+}
+
+
+#cep {
+    color: #333333;
+    padding-left: 9px;
+    padding-top: 12px;
+    padding-bottom: 11px;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #5ef500;
+}
+
+.btn {
+    cursor: pointer;
+    width: 197px;
+    height: 52px;
+    background: #70BE3F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+input::placeholder {
+    color: #DDDDDD;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+}
+
+.hidden {
+    display: none;
+}
